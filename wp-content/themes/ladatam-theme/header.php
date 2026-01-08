@@ -22,7 +22,13 @@
     <div class="header-container">
         <!-- LOGO -->
         <a href="<?php echo home_url(); ?>" class="header-logo">
-            <?php if (has_custom_logo()) : ?>
+            <?php 
+            $logo_path = get_stylesheet_directory() . '/assets/images/logo-ladatam.png';
+            $logo_url = get_stylesheet_directory_uri() . '/assets/images/logo-ladatam.png';
+            
+            if (file_exists($logo_path)) : ?>
+                <img src="<?php echo $logo_url; ?>" alt="LADATAM" class="logo-image">
+            <?php elseif (has_custom_logo()) : ?>
                 <?php the_custom_logo(); ?>
             <?php else : ?>
                 <span class="logo-text">
@@ -101,6 +107,8 @@
 /* LOGO */
 .header-logo {
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .logo-text {
@@ -115,8 +123,21 @@
     font-weight: 400;
 }
 
-.header-logo img {
-    height: 40px;
+.header-logo .logo-image {
+    height: 45px;
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header-logo:hover .logo-image {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 8px rgba(217, 255, 24, 0.4));
+}
+
+/* Soporte para custom-logo de WordPress */
+.header-logo img,
+.custom-logo {
+    height: 45px;
     width: auto;
 }
 
