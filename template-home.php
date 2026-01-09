@@ -165,20 +165,20 @@ get_header();
         <h2 class="section-title">👥 ¿Para quién es LADATAM?</h2>
         
         <div class="audiencia-grid">
-           <div class="audiencia-card ladatam-card">
-                <div class="audiencia-icon">🏪</div>
-                <h3>PYMEs</h3>
-                <p>Que buscan automatizar procesos y competir sin grandes inversiones tecnológicas.</p>
+            <div class="audiencia-card ladatam-card">
+                <div class="audiencia-icon">👔</div>
+                <h3>Profesionales</h3>
+                <p>Que quieren crecer, reconvertirse o mantenerse vigentes en la era de la IA.</p>
             </div>
             <div class="audiencia-card ladatam-card">
                 <div class="audiencia-icon">🚀</div>
                 <h3>Emprendedores</h3>
-                <p>Que necesitantomar mejores decisiones que hagan crecer su negocio.</p>
+                <p>Que necesitan usar datos e IA para tomar mejores decisiones y escalar.</p>
             </div>
             <div class="audiencia-card ladatam-card">
-                <div class="audiencia-icon">👔</div>
-                <h3>Profesionales</h3>
-                <p>Que quieren potenciar sus capacidades o mantenerse vigentes en la era de la IA.</p>
+                <div class="audiencia-icon">🏪</div>
+                <h3>PYMEs</h3>
+                <p>Que buscan automatizar procesos y competir sin grandes inversiones tecnológicas.</p>
             </div>
         </div>
         
