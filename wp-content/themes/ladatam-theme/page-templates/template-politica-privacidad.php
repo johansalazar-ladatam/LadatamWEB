@@ -261,7 +261,7 @@ get_header();
                 </div>
             </div>
             
-            <p>Para ejercer cualquiera de estos derechos, contáctenos a: <a href="mailto:privacidad@ladatam.com">privacidad@ladatam.com</a></p>
+            <p>Para ejercer cualquiera de estos derechos, contáctenos a: <a href="mailto:johan@ladatam.com">johan@ladatam.com</a></p>
         </div>
 
         <!-- MENORES DE EDAD -->
@@ -297,7 +297,7 @@ get_header();
             <div class="contact-info">
                 <div class="contact-item">
                     <strong>📧 Correo electrónico:</strong>
-                    <a href="mailto:laura@ladatam.com">privacidad@ladatam.com</a>
+                    <a href="mailto:laura@ladatam.com">laura@ladatam.com</a>
                 </div>
                 <div class="contact-item">
                     <strong>📧 Correo general:</strong>
