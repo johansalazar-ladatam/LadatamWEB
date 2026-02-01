@@ -146,10 +146,26 @@ get_header();
             </div>
         </div>
 
-        <!-- INTEGRACIÓN CON META -->
+        <!-- INTEGRACIÓN CON PLATAFORMAS DE MENSAJERÍA -->
         <div class="politica-section">
-            <h2>6. Integración con Plataformas de Meta</h2>
-            <p>Nuestro chatbot puede operar a través de <strong>Facebook Messenger</strong> e <strong>Instagram Direct</strong>. Al interactuar con nosotros a través de estas plataformas:</p>
+            <h2>6. Integración con Plataformas de Mensajería</h2>
+            
+            <h3>6.1 WhatsApp Business (Canal Principal)</h3>
+            <p>Nuestro chatbot opera principalmente a través de <strong>WhatsApp Business API</strong>. Al interactuar con nosotros por WhatsApp:</p>
+            <ul>
+                <li>Recibimos su número de teléfono y nombre de perfil de WhatsApp</li>
+                <li>Accedemos al contenido de los mensajes que nos envía</li>
+                <li>Podemos enviarle mensajes de respuesta, confirmaciones de citas y notificaciones transaccionales</li>
+                <li>Almacenamos el historial de conversación para brindar continuidad en la atención</li>
+            </ul>
+            <p>Esta integración está sujeta a la <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">Política de Privacidad de WhatsApp</a> y los <a href="https://www.whatsapp.com/legal/business-terms" target="_blank" rel="noopener">Términos de Servicio de WhatsApp Business</a>.</p>
+            
+            <div class="whatsapp-notice">
+                <strong>📱 Nota:</strong> Al iniciar una conversación con nuestro chatbot de WhatsApp, usted acepta recibir mensajes automatizados relacionados con su consulta, confirmaciones de citas y recordatorios. Puede dejar de recibir mensajes en cualquier momento escribiendo "DETENER" o bloqueando el número.
+            </div>
+
+            <h3>6.2 Meta (Facebook Messenger e Instagram)</h3>
+            <p>Nuestro chatbot también puede operar a través de <strong>Facebook Messenger</strong> e <strong>Instagram Direct</strong>. Al interactuar con nosotros a través de estas plataformas:</p>
             <ul>
                 <li>Recibimos su ID de usuario de la plataforma, nombre de perfil y foto (si es pública)</li>
                 <li>Accedemos al contenido de los mensajes que nos envía</li>
@@ -157,12 +173,14 @@ get_header();
             </ul>
             <p>Esta integración está sujeta a las <a href="https://www.facebook.com/policy.php" target="_blank" rel="noopener">Políticas de Datos de Meta</a> y los <a href="https://developers.facebook.com/terms/" target="_blank" rel="noopener">Términos de la Plataforma de Meta</a>.</p>
             
-            <h3>Permisos que solicitamos:</h3>
+            <h3>Permisos que solicitamos en Meta:</h3>
             <ul>
                 <li><code>pages_messaging</code> - Para enviar y recibir mensajes</li>
                 <li><code>pages_read_engagement</code> - Para leer información de la página</li>
                 <li><code>instagram_basic</code> - Para acceso básico a Instagram (si aplica)</li>
                 <li><code>instagram_manage_messages</code> - Para gestionar mensajes de Instagram</li>
+                <li><code>whatsapp_business_messaging</code> - Para gestionar mensajes de WhatsApp Business</li>
+                <li><code>whatsapp_business_management</code> - Para administrar la cuenta de WhatsApp Business</li>
             </ul>
         </div>
 
@@ -279,7 +297,7 @@ get_header();
             <div class="contact-info">
                 <div class="contact-item">
                     <strong>📧 Correo electrónico:</strong>
-                    <a href="mailto:privacidad@ladatam.com">privacidad@ladatam.com</a>
+                    <a href="mailto:laura@ladatam.com">privacidad@ladatam.com</a>
                 </div>
                 <div class="contact-item">
                     <strong>📧 Correo general:</strong>
@@ -315,9 +333,16 @@ get_header();
 
 <style>
 /* ESTILOS POLÍTICA DE PRIVACIDAD */
+
+/* Reducir espacio del hero en esta página */
+.page-hero-small .hero-content {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
 .section-politica {
     background: var(--ladatam-black, #000000);
-    padding: 80px 20px;
+    padding: 40px 20px 80px;
 }
 
 .container-narrow {
@@ -394,6 +419,16 @@ get_header();
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.9em;
     color: #d9ff18;
+}
+
+/* WHATSAPP NOTICE */
+.whatsapp-notice {
+    background: rgba(37, 211, 102, 0.1);
+    border-left: 4px solid #25D366;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 20px 0;
+    color: #e0e0e0;
 }
 
 /* HIGHLIGHT SECTION (IA) */
